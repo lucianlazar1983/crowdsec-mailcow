@@ -1,6 +1,7 @@
 # **Securing Mailcow with CrowdSec via Docker API**
 
-This guide provides instructions for implementing CrowdSec to protect a Mailcow: dockerized installation. It utilizes direct Docker log acquisition, which eliminates the need for complex rsyslog configurations or manual file monitoring.
+This guide provides instructions for implementing CrowdSec to protect a Mailcow dockerized installation. 
+It utilizes direct Docker log acquisition, which eliminates the need for complex rsyslog configurations or manual file monitoring.
 
 ## **1. Install CrowdSec**
 
