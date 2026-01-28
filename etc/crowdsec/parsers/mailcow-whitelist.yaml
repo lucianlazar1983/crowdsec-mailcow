@@ -1,0 +1,11 @@
+name: my docker-whitelist  
+description: "Whitelist internal Mailcow traffic"  
+whitelist:  
+  reason: "Internal Mailcow communication"  
+  ip:  
+    - "127.0.0.1"
+    - "::1"
+  cidr:  
+    - "172.22.1.0/24" # Adjust to match your IPv4 docker network
+    - "fd4d:6169:6c63:6f77::/64" # Adjust to match your IPv6 docker network
+    - "172.16.0.0/12" # Standard Docker network

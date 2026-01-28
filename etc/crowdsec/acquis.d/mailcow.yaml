@@ -1,0 +1,15 @@
+# Mailcow log sources definition
+# Dovecot and Postfix definition
+source: docker
+container_name:
+  - mailcowdockerized-dovecot-mailcow-1
+  - mailcowdockerized-postfix-mailcow-1
+labels:
+  type: syslog
+---
+# Nginx definition
+source: docker
+container_name:
+  - mailcowdockerized-nginx-mailcow-1
+labels:
+  type: nginx

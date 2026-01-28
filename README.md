@@ -128,7 +128,7 @@ whitelist:
 
 Restart the service after:
 ```bash
-sudo systemctl restart crowdsec  
+sudo systemctl restart crowdsec crowdsec-firewall-bouncer
 ```
 
 Done. 
